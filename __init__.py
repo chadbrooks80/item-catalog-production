@@ -21,7 +21,7 @@ GOOGLE_CLIENT_ID = json.loads(open(
     'client_secrets.json', 'r').read())['web']['client_id']
 
 # connect to sql database and initiate flask
-engine = create_engine('postgresql://item_catalog:SK2skwwi!Ts52218slw@localhost:5432/item-catalog')
+engine = create_engine('postgresql://item_catalog:SK2skwwi!Ts52218slw@localhost:5432/itemCatalog')
 
 Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
@@ -643,4 +643,4 @@ def getItemsJson():
 # Used to start the app.
 if __name__ == '__main__':
     app.debug = True
-    app.run(host='0.0.0.0', port=8000)
+    app.run(host='0.0.0.0', port=5000)
