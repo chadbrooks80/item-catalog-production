@@ -73,5 +73,5 @@ class Items(Base):
 
 
 # create database if doesn't exist, then connects.
-engine = create_engine('postgresql://item_catalog:Chad7099089!@localhost:5432/item-catalog')
+engine = create_engine('postgresql://item_catalog:SK2skwwi!Ts52218slw@localhost:5432/item-catalog')
 Base.metadata.create_all(engine)

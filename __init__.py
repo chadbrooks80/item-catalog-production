@@ -21,7 +21,7 @@ GOOGLE_CLIENT_ID = json.loads(open(
     'client_secrets.json', 'r').read())['web']['client_id']
 
 # connect to sql database and initiate flask
-engine = create_engine('postgresql://item_catalog:Chad7099089!@localhost:5432/item-catalog')
+engine = create_engine('postgresql://item_catalog:SK2skwwi!Ts52218slw@localhost:5432/item-catalog')
 
 Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
